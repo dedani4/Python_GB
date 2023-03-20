@@ -15,13 +15,12 @@ array_size = int(input('input size of array: '))
 array = [int(input(f"input element {i} to array: ")) for i in range(array_size)]
 number = int(input('input number for check: '))
 
-check = abs(array[0] - number)
 i_check = 0
+check = abs(array[i_check] - number)
 
 for i in range(1, array_size):
     if abs(array[i] - number) < check:
-        check = abs(array[i] - number)
         i_check = i
-
-
+        check = abs(array[i_check] - number)
+        
 print(array[i_check])
