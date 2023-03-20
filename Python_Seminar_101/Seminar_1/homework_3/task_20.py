@@ -36,7 +36,7 @@ for letter in word:
         if letter in alphabet[key]:
             res += key
 
-print(f"{word} {res}")
+print(res)
 
 
 
