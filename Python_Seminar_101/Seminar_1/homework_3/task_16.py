@@ -14,6 +14,11 @@
 array_size = int(input('input size of array: '))
 array = [int(input(f"input element {i} to array: ")) for i in range(array_size)]
 number = int(input('input number for check: '))
-
+#1
 print(array.count(number))
-
+#2
+res = 0
+for _ in array:
+    if number == _:
+        res += 1
+print(res)

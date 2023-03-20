@@ -22,5 +22,5 @@ for i in range(1, array_size):
     if abs(array[i] - number) < check:
         i_check = i
         check = abs(array[i_check] - number)
-        
+
 print(array[i_check])
