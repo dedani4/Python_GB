@@ -23,4 +23,5 @@ for i in range(1, array_size):
         check = abs(array[i] - number)
         i_check = i
 
+
 print(array[i_check])

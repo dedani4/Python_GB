@@ -35,6 +35,7 @@ for letter in word:
     for key in alphabet:
         if letter in alphabet[key]:
             res += key
+
 print(f"{word} {res}")
 
 

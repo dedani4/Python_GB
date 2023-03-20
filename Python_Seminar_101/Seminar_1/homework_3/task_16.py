@@ -16,3 +16,4 @@ array = [int(input(f"input element {i} to array: ")) for i in range(array_size)]
 number = int(input('input number for check: '))
 
 print(array.count(number))
+
