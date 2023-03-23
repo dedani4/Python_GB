@@ -1,16 +1,16 @@
-# This is a sample Python script.
+def determ_mx(matrix,n):
+    match n:
+        case 1:
+            return matrix[0][0]
+        case 2:
+            return matrix[0][0]*matrix[1][1]-matrix[0][1]*matrix[1][0]
+        case n;
+            for i in range(n):
+                mn = []
+                for k in range(n):
+                    r = []
+                    for j in range(n):
+                        if k!= 0
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+            return matrix[0][0]*
