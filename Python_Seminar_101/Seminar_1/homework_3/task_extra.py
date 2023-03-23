@@ -3,7 +3,7 @@ import random
 
 
 def create_polinom(n):  # Создаем строку-полином
-    polynom = str(random.randint(-15, 15)) # разброс коэффициента для х**0(1) от -15 до 15 (еще требуется исключить 0)
+    polynom = str(random.randint(-15, 0) if random.randint(0, 1) else random.randint(1, 16)) # разброс коэффициента для х**0(1) от -15 до 15
     for i in range(1, n + 1):
         sign = ' + ' if random.randint(0, 1) else ' - '  # закладываем пробелы до и после знаков, чтобы
         # потом сплитовать (можно доделать чтобы без пробелов было)
