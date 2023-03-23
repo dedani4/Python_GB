@@ -18,11 +18,10 @@ def parse_to_dic(polynom):  # разбиваем строку в словарь,
         if 'x' in polynom_list[i]:  # проходим по списку и все элементы с 'х' разбиваем на ключ 'x**[]'
             # и значение - коэффициент
             num_str = ''
-            while '0' <= polynom_list[i][0] <= '9':
+            while '0' <= polynom_list[i][0] <= '9':  # вытаскиваем значение коэффициента в  num_str
                 num_str += polynom_list[i][0]
-                polynom_list[i] = polynom_list[i][1:]
-            polynom_dic[polynom_list[i]] = int(
-                polynom_list[i - 1] + num_str)  # вносим значение под соответствующим ключом,
+                polynom_list[i] = polynom_list[i][1:]  # удаляем коэффициент из элемента, чтобы сделать из него ключ
+            polynom_dic[polynom_list[i]] = int(polynom_list[i - 1] + num_str)  # вносим значение под соответствующим ключом,
             # учитывая знак перед элементом
     return polynom_dic
 
