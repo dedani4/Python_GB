@@ -3,7 +3,7 @@ import random
 
 
 def create_polinom(n):  # Создаем строку-полином
-    polynom = str(random.randint(-15, 0) if random.randint(0, 1) else random.randint(1, 16)) # разброс коэффициента для х**0(1) от -15 до 15
+    polynom = str(random.randint(-15, -1) if random.randint(0, 1) else random.randint(1, 16)) # разброс коэффициента для х**0(1) от -15 до 15
     for i in range(1, n + 1):
         sign = ' + ' if random.randint(0, 1) else ' - '  # закладываем пробелы до и после знаков, чтобы
         # потом сплитовать (можно доделать чтобы без пробелов было)
@@ -46,8 +46,8 @@ def sum_polynoms(polynom1_dic, polynom2_dic):  #
     return result
 
 
-n1 = int(input('Input max exponent for 1st polynom: '))
-n2 = int(input('Input max exponent for 2nd polynom: '))
+n1 = int(input('Input max_3 exponent for 1st polynom: '))
+n2 = int(input('Input max_3 exponent for 2nd polynom: '))
 polynom1 = create_polinom(n1)
 polynom2 = create_polinom(n2)
 print(polynom1)
