@@ -1,0 +1,5 @@
+Ivan Ivanov;98662645;GB college
+Petr Petrov;21374022;family
+Igor Igorev;6598652;work
+aergdzg;345;zdfbg
+petya;030404506070880;example
